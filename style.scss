@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+    background-color: #EEEEEE;
+    color:#fff;
+    text-align: center;
+
+    body:before{
+      content:'';
+      height:100%;
+      display:inline-block;
+      vertical-align:middle;
+    }
+    button{
+      background:#1AAB8A;
+      color:#fff;
+      border:none;
+      position:relative;
+      height:60px;
+      font-size:1.6em;
+      padding:0 2em;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+    }
+    button:hover{
+      background:#fff;
+      color:#1AAB8A;
+    }
+    button:before,button:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #1AAB8A;
+      transition:400ms ease all;
+    }
+    button:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    button:hover:before,button:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+  
+}
+
+h1{
+  border-bottom:1px solid #191919;
+  font-size: 5rem;
+  background-color: #1AAB8A;
+}
+
+#RealtimeClockArea{
+  font-size: 15rem;
+  background-color: #1AAB8A	;
+  margin:auto;
+  text-shadow: 2px 3px 3px #191919;
+  }
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  input{
+    // margin-top:8rem;
+    width: 30rem;
+    height:5.5rem;
+    font-size: 5rem;
+
+    &::placeholder{
+      font-size:3rem;
+      text-align: center;
+    }
+
+    #name{
+      border-radius: 5%;
+      }
+  }
+}
+
+#result{
+  margin:4rem;
+  border: 1px solid #191919;
+  background-color: #DDDDDD;
+  
+  a{
+    font-size: 3rem;
+    display: block;
+    color:#191919;
+    }
+}
